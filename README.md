@@ -1,11 +1,10 @@
-=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=
-CIS 120 Game Project README
-PennKey: wmicah
+=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=   
+CIS 120 Game Project README   
+PennKey: wmicah   
 =:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=:=
 
-===================
-=: Core Concepts :=
-===================
+## Core Concepts   
+
 
 - List the four core concepts, the features they implement, and why each feature
   is an appropriate use of the concept. Incorporate the feedback you got after
@@ -31,37 +30,37 @@ PennKey: wmicah
   		many different input were handled appropriately. 
 
 
-=========================
-=: Your Implementation :=
-=========================
+
+## Your Implementation
+
 
 - Provide an overview of each of the classes in your code, and what their
   function is in the overall game.
   
-  Game.java 
+  - `Game.java` 
   	Compiles all the other files and runs the main method of the game. 
   	
-  GameCourt.java
+  - `GameCourt.java`
   	Runs the 2D array of the game board and all major game play logic.
   	
-  NewSquare.java
+  - `NewSquare.java`
   	A newer version of the old legacy Square class. Was originally created to test a new concept 
-  	but went on to become a thing of its own. This class that extend JToggleButton and mostly 
+  	but went on to become a thing of its own. This class that extend `JToggleButton` and mostly 
   	keeps track of the different graphics of each square depending on its state. 
-  	The board is made up of a 20x20 array of NewSquare. 
+  	The board is made up of a 20x20 array of `NewSquare`. 
   
-  ScoreBoard.java
+  - `ScoreBoard.java`
   	Keeps track of the time/score of the player. 
   	
-  ParaseScore.java
+  - `ParaseScore.java`
   	Was supposed to be spelled as parse, but this class keeps track of the IO and top scores.
-  	Keeps a LinkedList of HighScorers. 
+  	Keeps a LinkedList of `HighScorers`. 
   
-  HighScorer.java
+  - `HighScorer.java`
   	This class helps create a consistent syntax to write out to the high score file. 
   	
-  GameTest.java
-  	JUnit test that test functionality of different parts of the game. 
+  - `GameTest.java`
+  	`JUnit` test that test functionality of different parts of the game. 
   
 
 
@@ -79,11 +78,3 @@ PennKey: wmicah
   		made game concepts more compartmentalized and easier to test individual functionality before 
   		trying to compile an entire game. Private state isn't as encapsulated as it could have been, 
   		but I had to allow certain manipulations due to lack of previous consideration. 
-
-
-========================
-=: External Resources :=
-========================
-
-- Cite any external resources (libraries, images, tutorials, etc.) that you may
-  have used while implementing your game.
